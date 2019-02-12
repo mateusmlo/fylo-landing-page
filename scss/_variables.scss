@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Raleway:400,700');
+
+//fonts
+$raleway: 'Raleway',
+sans-serif;
+$open-sans: 'Open Sans',
+sans-serif;
+
+//links mixin
+@mixin linkStyles {
+  display: block;
+  font-family: $raleway;
+  color: $neutral-white;
+}
+
+//flex mixin
+@mixin flexColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+//p styles
+@mixin pStyles {
+  font-size: 1.1rem;
+  padding: 0 2rem 0 2rem;
+}
+
+//buttons and form
+@mixin formAndButtonStyles {
+  margin: 1rem;
+  width: 20rem;
+  height: 4rem;
+  padding: 0 20px 0 20px;
+  border-radius: 30px;
+}
+
+//colors
+//intro and email sign up
+$intro-email-bg: hsl(217, 28%, 15%);
+//main background
+$main-bg: hsl(218, 28%, 13%);
+//footer background
+$footer-bg: hsl(216, 53%, 9%);
+//testimonials background
+$testimonials-bg: hsl(219, 30%, 18%);
+//inside buttons (grandient)
+$btn-color-cyan: hsl(176, 68%, 64%);
+$btn-color-blue: hsl(198, 60%, 50%);
+//neutral color
+$neutral-white: hsl(0, 0%, 100%);

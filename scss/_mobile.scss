@@ -1,0 +1,293 @@
+@media screen and (min-width: 375px) {
+  .fylo-logo {
+    width: 85px;
+    height: 25px;
+    background: url('/images/logo.svg');
+    text-indent: -999999px;
+    background-size: cover;
+  }
+
+  .nav-items {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+
+    & li:first-child {
+      margin-right: auto;
+    }
+
+    & a {
+      @include linkStyles;
+      font-size: 1.2rem;
+      margin: 0.5rem;
+      padding-right: 0.4rem;
+      transition: all 0.2s ease-in-out;
+
+      &:hover {
+        transform: scale(1.1);
+        font-weight: 700;
+      }
+    }
+  }
+
+  .intro-img {
+    text-align: center;
+
+    & img {
+      width: 450px;
+      max-width: 90%;
+      max-height: 350px;
+    }
+  }
+
+  .top-container {
+    background: url(/images/bg-curvy-mobile.svg) no-repeat;
+    background-size: 120%;
+    background-position: bottom;
+    background-color: $testimonials-bg;
+    padding-top: 1rem;
+  }
+
+  .intro-container {
+    text-align: center;
+    @include flexColumn;
+    padding: 1rem;
+  }
+
+  .intro-header {
+    padding: 0 2rem 0 2rem;
+    line-height: 3rem;
+  }
+
+  .intro-text {
+    @include pStyles;
+  }
+
+  .get-started {
+    align-self: center;
+
+    & a {
+      @include linkStyles;
+      @include formAndButtonStyles;
+      background: linear-gradient(90deg,
+        $btn-color-cyan 10%,
+        $btn-color-blue 90%);
+      font-weight: 700;
+      padding-top: 15px;
+    }
+  }
+
+  .fylo-services {
+    background: $main-bg;
+    @include flexColumn;
+    padding: 5rem 1.5rem 5rem 1.5rem;
+  }
+
+  .fylo-service {
+    text-align: center;
+    margin-bottom: 3rem;
+    color: white;
+  }
+
+  .service-header {
+    font-size: 1.5rem;
+  }
+
+  .service-description {
+    padding: 0 2rem 0 2rem;
+  }
+
+  .fylo-about {
+    background: $main-bg;
+    @include flexColumn;
+    padding: 0 1rem 5rem 1rem;
+
+    & a {
+      display: block;
+      width: 14rem;
+      padding-left: 2rem;
+      font-family: $raleway;
+      color: $btn-color-cyan;
+      font-size: 1.1rem;
+    }
+
+    .underline {
+      border-top: 1px solid $btn-color-cyan;
+      width: 11.5rem;
+      margin-left: 2rem;
+    }
+  }
+
+  .productive-img-container {
+    text-align: center;
+
+    & img {
+      width: 450px;
+      max-width: 90%;
+      max-height: 350px;
+    }
+  }
+
+  .about-header {
+    padding: 0 2rem 0 2rem;
+    font-size: 1.5rem;
+  }
+
+  .about-text {
+    @include pStyles;
+  }
+
+  .fylo-testimonials {
+    padding: 4rem 0 4rem 0;
+    background: $main-bg;
+    @include flexColumn;
+    position: relative;
+  }
+
+  .quote-img {
+    width: 2rem;
+    left: 3rem;
+    position: absolute;
+  }
+
+  .fylo-testimonial {
+    background: $testimonials-bg;
+    padding: 1.5rem;
+    color: white;
+    height: 17rem;
+    border-radius: 5px;
+    line-height: 1.5rem;
+
+    & p {
+      padding: 0.5rem;
+    }
+  }
+
+  .who-said {
+    display: flex;
+    align-items: center;
+  }
+
+  .author-img-container {
+    padding: 1rem;
+
+    & img {
+      border-radius: 100px;
+      width: 40px;
+    }
+  }
+
+  cite {
+    font-style: normal;
+
+    &:first-child {
+      letter-spacing: 2px;
+      font-weight: 700;
+    }
+  }
+
+  .support-container {
+    padding: 4rem 0 4rem 0;
+    background: linear-gradient(180deg, $main-bg 50%, $footer-bg 50%);
+    @include flexColumn;
+    align-items: center;
+  }
+
+  .fylo-support {
+    color: white;
+    background: $main-bg;
+    width: 90%;
+    text-align: center;
+    border-radius: 5px;
+    padding: 1rem;
+    box-shadow: 0px 4px 20px 3px rgba(0, 0, 0, 0.35);
+
+    & h2 {
+      font-size: 1.5rem;
+    }
+
+    & p {
+      @include pStyles;
+    }
+
+    & input[type=email] {
+      @include formAndButtonStyles;
+      border: none;
+    }
+
+    & input[type=submit] {
+      @include formAndButtonStyles;
+      background: linear-gradient(90deg,
+        $btn-color-cyan 10%,
+        $btn-color-blue 90%);
+      font-weight: 700;
+      cursor: pointer;
+      border: none;
+      color: white;
+    }
+  }
+
+  .fylo-footer {
+    @include flexColumn;
+    background: $footer-bg;
+    color: white;
+    padding: 2rem;
+  }
+
+  .logo-footer,
+  .fylo-location {
+    padding: 1rem;
+  }
+
+  .fylo-location {
+    font-style: normal;
+
+    & span img {
+      padding-right: 1rem;
+    }
+
+    & p:first-child {
+      padding-left: initial;
+    }
+
+    & p {
+      padding-left: 2rem;
+    }
+  }
+
+  .fylo-tel-container {
+    & span img {
+      padding-right: 1rem;
+    }
+  }
+
+  .fylo-email-container {
+    & span img {
+      padding-right: 1rem;
+    }
+
+    & a {
+      font-family: $raleway;
+      color: white;
+    }
+  }
+
+  .footer-links,
+  .footer-links-2 {
+    list-style-type: none;
+
+    & li {
+      padding-bottom: 1rem;
+
+      & a {
+        font-family: $raleway;
+        color: white;
+        font-size: 1.3rem;
+
+        &:hover {
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}

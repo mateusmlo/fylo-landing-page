@@ -1,0 +1,17 @@
+@import 'variables';
+@import 'mobile';
+@import 'desktop';
+
+a {
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+body {
+  font-family: $open-sans;
+  line-height: 2rem;
+}
