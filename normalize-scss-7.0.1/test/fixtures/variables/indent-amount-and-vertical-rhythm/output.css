@@ -6,9 +6,9 @@
      * 2. Prevent adjustments of font size after orientation changes in
      *    IE on Windows Phone and in iOS.
      */
-@import url("https://fonts.googleapis.com/css?family=Open+Sans|Raleway:400,700");
 html {
-  line-height: 1.15;
+  font-size: 100%;
+  line-height: 1.5em;
   /* 1 */
   -ms-text-size-adjust: 100%;
   /* 2 */
@@ -40,10 +40,64 @@ section {
      */
 h1 {
   font-size: 2em;
-  margin: 0.67em 0; }
+  line-height: 1.5em;
+  /* Set 1 unit of vertical rhythm on the top and bottom margins. */
+  margin: 0.75em 0; }
+
+h2 {
+  font-size: 1.5em;
+  line-height: 2em;
+  margin: 1em 0; }
+
+h3 {
+  font-size: 1.17em;
+  line-height: 1.28205em;
+  margin: 1.28205em 0; }
+
+h4 {
+  font-size: 1em;
+  line-height: 1.5em;
+  margin: 1.5em 0; }
+
+h5 {
+  font-size: 0.83em;
+  line-height: 1.80723em;
+  margin: 1.80723em 0; }
+
+h6 {
+  font-size: 0.67em;
+  line-height: 2.23881em;
+  margin: 2.23881em 0; }
 
 /* Grouping content
        ========================================================================== */
+/**
+       * Set 1 unit of vertical rhythm on the top and bottom margin.
+       */
+blockquote {
+  margin: 1.5em 3em; }
+
+dl,
+ol,
+ul {
+  margin: 1.5em 0; }
+
+/**
+       * Turn off margins on nested lists.
+       */
+ol ol,
+ol ul,
+ul ol,
+ul ul {
+  margin: 0; }
+
+dd {
+  margin: 0 0 0 3em; }
+
+ol,
+ul {
+  padding: 0 0 0 3em; }
+
 /**
      * Add the correct display in IE 9-.
      */
@@ -55,7 +109,7 @@ figure {
      * Add the correct margin in IE 8.
      */
 figure {
-  margin: 1em 40px; }
+  margin: 1.5em 3em; }
 
 /**
      * 1. Add the correct box sizing in Firefox.
@@ -74,6 +128,13 @@ hr {
      */
 main {
   display: block; }
+
+/**
+       * Set 1 unit of vertical rhythm on the top and bottom margin.
+       */
+p,
+pre {
+  margin: 1.5em 0; }
 
 /**
      * 1. Correct the inheritance and scaling of font size in all browsers.
@@ -216,7 +277,7 @@ textarea {
   /* 1 */
   font-size: 100%;
   /* 1 */
-  line-height: 1.15;
+  line-height: 1.5em;
   /* 1 */
   margin: 0;
   /* 2 */ }
@@ -379,7 +440,22 @@ summary {
      * Add the correct display in IE 9-.
      */
 menu {
-  display: block; }
+  display: block;
+  /*
+         * 1. Set 1 unit of vertical rhythm on the top and bottom margin.
+         * 2. Set consistent space for the list style image.
+         */
+  margin: 1.5em 0;
+  /* 1 */
+  padding: 0 0 0 3em;
+  /* 2 */
+  /**
+         * Turn off margins on nested lists.
+         */ }
+  menu menu,
+  ol menu,
+  ul menu {
+    margin: 0; }
 
 /* Scripting
        ========================================================================== */
@@ -402,230 +478,3 @@ template {
      */
 [hidden] {
   display: none; }
-
-@media screen and (min-width: 375px) {
-  .fylo-logo {
-    width: 85px;
-    height: 25px;
-    background: url("/images/logo.svg");
-    text-indent: -999999px;
-    background-size: cover; }
-  .nav-items {
-    display: flex;
-    list-style-type: none;
-    align-items: center; }
-    .nav-items li:first-child {
-      margin-right: auto; }
-    .nav-items a {
-      display: block;
-      font-family: "Raleway", sans-serif;
-      color: white;
-      font-size: 1.2rem;
-      margin: 0.5rem;
-      padding-right: 0.4rem;
-      transition: all 0.2s ease-in-out; }
-      .nav-items a:hover {
-        transform: scale(1.1);
-        font-weight: 700; }
-  .intro-img {
-    text-align: center; }
-    .intro-img img {
-      width: 450px;
-      max-width: 90%;
-      max-height: 350px; }
-  .top-container {
-    background: url(/images/bg-curvy-mobile.svg) no-repeat;
-    background-size: 120%;
-    background-position: bottom;
-    background-color: #202a3c;
-    padding-top: 1rem; }
-  .intro-container {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    padding: 1rem; }
-  .intro-header {
-    padding: 0 2rem 0 2rem;
-    line-height: 3rem; }
-  .intro-text {
-    font-size: 1.1rem;
-    padding: 0 2rem 0 2rem; }
-  .get-started {
-    align-self: center; }
-    .get-started a {
-      display: block;
-      font-family: "Raleway", sans-serif;
-      color: white;
-      margin: 1rem;
-      width: 20rem;
-      height: 4rem;
-      padding: 0 20px 0 20px;
-      border-radius: 30px;
-      background: linear-gradient(90deg, #65e2d9 10%, #339ecc 90%);
-      font-weight: 700;
-      padding-top: 15px; }
-  .fylo-services {
-    background: #181f2a;
-    display: flex;
-    flex-direction: column;
-    padding: 5rem 1.5rem 5rem 1.5rem; }
-  .fylo-service {
-    text-align: center;
-    margin-bottom: 3rem;
-    color: white; }
-  .service-header {
-    font-size: 1.5rem; }
-  .service-description {
-    padding: 0 2rem 0 2rem; }
-  .fylo-about {
-    background: #181f2a;
-    display: flex;
-    flex-direction: column;
-    padding: 0 1rem 5rem 1rem; }
-    .fylo-about a {
-      display: block;
-      width: 14rem;
-      padding-left: 2rem;
-      font-family: "Raleway", sans-serif;
-      color: #65e2d9;
-      font-size: 1.1rem; }
-    .fylo-about .underline {
-      border-top: 1px solid #65e2d9;
-      width: 11.5rem;
-      margin-left: 2rem; }
-  .productive-img-container {
-    text-align: center; }
-    .productive-img-container img {
-      width: 450px;
-      max-width: 90%;
-      max-height: 350px; }
-  .about-header {
-    padding: 0 2rem 0 2rem;
-    font-size: 1.5rem; }
-  .about-text {
-    font-size: 1.1rem;
-    padding: 0 2rem 0 2rem; }
-  .fylo-testimonials {
-    padding: 4rem 0 4rem 0;
-    background: #181f2a;
-    display: flex;
-    flex-direction: column;
-    position: relative; }
-  .quote-img {
-    width: 2rem;
-    left: 3rem;
-    position: absolute; }
-  .fylo-testimonial {
-    background: #202a3c;
-    padding: 1.5rem;
-    color: white;
-    height: 17rem;
-    border-radius: 5px;
-    line-height: 1.5rem; }
-    .fylo-testimonial p {
-      padding: 0.5rem; }
-  .who-said {
-    display: flex;
-    align-items: center; }
-  .author-img-container {
-    padding: 1rem; }
-    .author-img-container img {
-      border-radius: 100px;
-      width: 40px; }
-  cite {
-    font-style: normal; }
-    cite:first-child {
-      letter-spacing: 2px;
-      font-weight: 700; }
-  .support-container {
-    padding: 4rem 0 4rem 0;
-    background: linear-gradient(180deg, #181f2a 50%, #0b1523 50%);
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
-  .fylo-support {
-    color: white;
-    background: #181f2a;
-    width: 90%;
-    text-align: center;
-    border-radius: 5px;
-    padding: 1rem;
-    box-shadow: 0px 4px 20px 3px rgba(0, 0, 0, 0.35); }
-    .fylo-support h2 {
-      font-size: 1.5rem; }
-    .fylo-support p {
-      font-size: 1.1rem;
-      padding: 0 2rem 0 2rem; }
-    .fylo-support input[type=email] {
-      margin: 1rem;
-      width: 20rem;
-      height: 4rem;
-      padding: 0 20px 0 20px;
-      border-radius: 30px;
-      border: none; }
-    .fylo-support input[type=submit] {
-      margin: 1rem;
-      width: 20rem;
-      height: 4rem;
-      padding: 0 20px 0 20px;
-      border-radius: 30px;
-      background: linear-gradient(90deg, #65e2d9 10%, #339ecc 90%);
-      font-weight: 700;
-      cursor: pointer;
-      border: none;
-      color: white; }
-  .fylo-footer {
-    display: flex;
-    flex-direction: column;
-    background: #0b1523;
-    color: white;
-    padding: 2rem; }
-  .logo-footer,
-  .fylo-location {
-    padding: 1rem; }
-  .fylo-location {
-    font-style: normal; }
-    .fylo-location span img {
-      padding-right: 1rem; }
-    .fylo-location p:first-child {
-      padding-left: initial; }
-    .fylo-location p {
-      padding-left: 2rem; }
-  .fylo-tel-container span img {
-    padding-right: 1rem; }
-  .fylo-email-container span img {
-    padding-right: 1rem; }
-  .fylo-email-container a {
-    font-family: "Raleway", sans-serif;
-    color: white; }
-  .footer-links,
-  .footer-links-2 {
-    list-style-type: none; }
-    .footer-links li,
-    .footer-links-2 li {
-      padding-bottom: 1rem; }
-      .footer-links li a,
-      .footer-links-2 li a {
-        font-family: "Raleway", sans-serif;
-        color: white;
-        font-size: 1.3rem; }
-        .footer-links li a:hover,
-        .footer-links-2 li a:hover {
-          font-weight: 700; } }
-
-.intro-header,
-.intro-text,
-.about-header,
-.about-text {
-  color: white; }
-
-a {
-  text-decoration: none; }
-
-* {
-  box-sizing: border-box;
-  font-size: 14px; }
-
-body {
-  font-family: "Open Sans", sans-serif;
-  line-height: 2rem; }
