@@ -1,19 +1,21 @@
 @media screen and (min-width: 375px) {
+  .fylo-logo {
+    width: 85px;
+    height: 25px;
+    background: url('/images/logo.svg');
+    text-indent: -999999px;
+    background-size: cover;
+  }
+
   .nav-items {
     display: flex;
     list-style-type: none;
     align-items: center;
 
-    //logo positioning and size
     & li:first-child {
       margin-right: auto;
-
-      & img {
-        height: 35px;
-      }
     }
 
-    //nav links and hover (applies to logo)
     & a {
       @include linkStyles;
       font-size: 1.2rem;
