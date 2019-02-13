@@ -2,7 +2,7 @@
   .fylo-logo {
     width: 85px;
     height: 25px;
-    background: url('/images/logo.svg');
+    background: url('../images/logo.svg');
     text-indent: -999999px;
     background-size: cover;
   }
@@ -41,7 +41,7 @@
   }
 
   .top-container {
-    background: url(/images/bg-curvy-mobile.svg) no-repeat;
+    background: url(../images/bg-curvy-mobile.svg) no-repeat;
     background-size: 120%;
     background-position: bottom;
     background-color: $testimonials-bg;
