@@ -489,6 +489,12 @@ template {
       font-family: "Raleway", sans-serif;
       color: #65e2d9;
       font-size: 1.1rem; }
+      .fylo-about a::after {
+        content: '';
+        display: inline-block;
+        background: url(../images/icon-arrow.svg);
+        width: 15px;
+        height: 14px; }
     .fylo-about .underline {
       border-top: 1px solid #65e2d9;
       width: 11.5rem;
@@ -580,21 +586,35 @@ template {
     background: #0b1523;
     color: white;
     padding: 2rem; }
-  .logo-footer,
-  .fylo-location {
+  .logo-footer {
     padding: 1rem; }
   .fylo-location {
     font-style: normal; }
-    .fylo-location span img {
-      padding-right: 1rem; }
     .fylo-location p:first-child {
       padding-left: initial; }
+      .fylo-location p:first-child::before {
+        content: '';
+        background: url(../images/icon-location.svg) no-repeat;
+        display: inline-block;
+        width: 13px;
+        height: 18px;
+        padding-right: 1.1rem; }
     .fylo-location p {
-      padding-left: 2rem; }
-  .fylo-tel-container span img {
-    padding-right: 1rem; }
-  .fylo-email-container span img {
-    padding-right: 1rem; }
+      padding-left: 2.3rem; }
+  .fylo-tel-container p::before {
+    content: '';
+    background: url(../images/icon-phone.svg) no-repeat;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    padding-right: 0.8rem; }
+  .fylo-email-container p::before {
+    content: '';
+    background: url(../images/icon-email.svg) no-repeat;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    padding-right: 0.8rem; }
   .fylo-email-container a {
     font-family: "Raleway", sans-serif;
     color: white; }
